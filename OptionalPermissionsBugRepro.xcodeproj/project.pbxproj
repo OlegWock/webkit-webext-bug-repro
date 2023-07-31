@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D193755B2A783901003D287E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193755A2A783901003D287E /* AppDelegate.swift */; };
+		D193755D2A783901003D287E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193755C2A783901003D287E /* SceneDelegate.swift */; };
+		D19375602A783901003D287E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D193755E2A783901003D287E /* LaunchScreen.storyboard */; };
+		D19375632A783901003D287E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D19375612A783901003D287E /* Main.storyboard */; };
+		D193756C2A783901003D287E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D193756B2A783901003D287E /* AppDelegate.swift */; };
+		D193756F2A783901003D287E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D193756D2A783901003D287E /* Main.storyboard */; };
+		D19375762A783901003D287E /* OptionalPermissionsBugRepro Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D19375752A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D19375802A783901003D287E /* OptionalPermissionsBugRepro Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D193757F2A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D19375862A783901003D287E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D19375412A783900003D287E /* Main.html */; };
+		D19375872A783901003D287E /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = D19375412A783900003D287E /* Main.html */; };
+		D19375882A783901003D287E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D19375432A783900003D287E /* Icon.png */; };
+		D19375892A783901003D287E /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D19375432A783900003D287E /* Icon.png */; };
+		D193758A2A783901003D287E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D19375442A783900003D287E /* Style.css */; };
+		D193758B2A783901003D287E /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = D19375442A783900003D287E /* Style.css */; };
+		D193758C2A783901003D287E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D19375452A783900003D287E /* Script.js */; };
+		D193758D2A783901003D287E /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = D19375452A783900003D287E /* Script.js */; };
+		D193758E2A783901003D287E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19375462A783900003D287E /* ViewController.swift */; };
+		D193758F2A783901003D287E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19375462A783900003D287E /* ViewController.swift */; };
+		D19375902A783901003D287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19375472A783901003D287E /* Assets.xcassets */; };
+		D19375912A783901003D287E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D19375472A783901003D287E /* Assets.xcassets */; };
+		D19375922A783901003D287E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19375492A783901003D287E /* SafariWebExtensionHandler.swift */; };
+		D19375932A783901003D287E /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19375492A783901003D287E /* SafariWebExtensionHandler.swift */; };
+		D19375942A783901003D287E /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D193754B2A783901003D287E /* _locales */; };
+		D19375952A783901003D287E /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = D193754B2A783901003D287E /* _locales */; };
+		D19375962A783901003D287E /* images in Resources */ = {isa = PBXBuildFile; fileRef = D193754C2A783901003D287E /* images */; };
+		D19375972A783901003D287E /* images in Resources */ = {isa = PBXBuildFile; fileRef = D193754C2A783901003D287E /* images */; };
+		D19375982A783901003D287E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D193754D2A783901003D287E /* manifest.json */; };
+		D19375992A783901003D287E /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = D193754D2A783901003D287E /* manifest.json */; };
+		D193759A2A783901003D287E /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D193754E2A783901003D287E /* background.js */; };
+		D193759B2A783901003D287E /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = D193754E2A783901003D287E /* background.js */; };
+		D193759C2A783901003D287E /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D193754F2A783901003D287E /* content.js */; };
+		D193759D2A783901003D287E /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = D193754F2A783901003D287E /* content.js */; };
+		D193759E2A783901003D287E /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D19375502A783901003D287E /* popup.html */; };
+		D193759F2A783901003D287E /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = D19375502A783901003D287E /* popup.html */; };
+		D19375A02A783901003D287E /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D19375512A783901003D287E /* popup.css */; };
+		D19375A12A783901003D287E /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = D19375512A783901003D287E /* popup.css */; };
+		D19375A22A783901003D287E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D19375522A783901003D287E /* popup.js */; };
+		D19375A32A783901003D287E /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = D19375522A783901003D287E /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D19375772A783901003D287E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D193753B2A783900003D287E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D19375742A783901003D287E;
+			remoteInfo = "OptionalPermissionsBugRepro Extension (iOS)";
+		};
+		D19375812A783901003D287E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D193753B2A783900003D287E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D193757E2A783901003D287E;
+			remoteInfo = "OptionalPermissionsBugRepro Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D19375A92A783901003D287E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D19375762A783901003D287E /* OptionalPermissionsBugRepro Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375B02A783901003D287E /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D19375802A783901003D287E /* OptionalPermissionsBugRepro Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D19375422A783900003D287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		D19375432A783900003D287E /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		D19375442A783900003D287E /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		D19375452A783900003D287E /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		D19375462A783900003D287E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D19375472A783901003D287E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D19375492A783901003D287E /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		D193754B2A783901003D287E /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		D193754C2A783901003D287E /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		D193754D2A783901003D287E /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		D193754E2A783901003D287E /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		D193754F2A783901003D287E /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		D19375502A783901003D287E /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		D19375512A783901003D287E /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		D19375522A783901003D287E /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		D19375572A783901003D287E /* OptionalPermissionsBugRepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptionalPermissionsBugRepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D193755A2A783901003D287E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D193755C2A783901003D287E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D193755F2A783901003D287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D19375622A783901003D287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D19375642A783901003D287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19375692A783901003D287E /* OptionalPermissionsBugRepro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OptionalPermissionsBugRepro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D193756B2A783901003D287E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D193756E2A783901003D287E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D19375702A783901003D287E /* OptionalPermissionsBugRepro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OptionalPermissionsBugRepro.entitlements; sourceTree = "<group>"; };
+		D19375752A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OptionalPermissionsBugRepro Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D193757A2A783901003D287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D193757F2A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "OptionalPermissionsBugRepro Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D19375842A783901003D287E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19375852A783901003D287E /* OptionalPermissionsBugRepro.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OptionalPermissionsBugRepro.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D19375542A783901003D287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375662A783901003D287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375722A783901003D287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D193757C2A783901003D287E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D193753A2A783900003D287E = {
+			isa = PBXGroup;
+			children = (
+				D193753F2A783900003D287E /* Shared (App) */,
+				D19375482A783901003D287E /* Shared (Extension) */,
+				D19375592A783901003D287E /* iOS (App) */,
+				D193756A2A783901003D287E /* macOS (App) */,
+				D19375792A783901003D287E /* iOS (Extension) */,
+				D19375832A783901003D287E /* macOS (Extension) */,
+				D19375582A783901003D287E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D193753F2A783900003D287E /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D19375462A783900003D287E /* ViewController.swift */,
+				D19375472A783901003D287E /* Assets.xcassets */,
+				D19375402A783900003D287E /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		D19375402A783900003D287E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D19375412A783900003D287E /* Main.html */,
+				D19375432A783900003D287E /* Icon.png */,
+				D19375442A783900003D287E /* Style.css */,
+				D19375452A783900003D287E /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D19375482A783901003D287E /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D19375492A783901003D287E /* SafariWebExtensionHandler.swift */,
+				D193754A2A783901003D287E /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		D193754A2A783901003D287E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D193754B2A783901003D287E /* _locales */,
+				D193754C2A783901003D287E /* images */,
+				D193754D2A783901003D287E /* manifest.json */,
+				D193754E2A783901003D287E /* background.js */,
+				D193754F2A783901003D287E /* content.js */,
+				D19375502A783901003D287E /* popup.html */,
+				D19375512A783901003D287E /* popup.css */,
+				D19375522A783901003D287E /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D19375582A783901003D287E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D19375572A783901003D287E /* OptionalPermissionsBugRepro.app */,
+				D19375692A783901003D287E /* OptionalPermissionsBugRepro.app */,
+				D19375752A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */,
+				D193757F2A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D19375592A783901003D287E /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D193755A2A783901003D287E /* AppDelegate.swift */,
+				D193755C2A783901003D287E /* SceneDelegate.swift */,
+				D193755E2A783901003D287E /* LaunchScreen.storyboard */,
+				D19375612A783901003D287E /* Main.storyboard */,
+				D19375642A783901003D287E /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		D193756A2A783901003D287E /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				D193756B2A783901003D287E /* AppDelegate.swift */,
+				D193756D2A783901003D287E /* Main.storyboard */,
+				D19375702A783901003D287E /* OptionalPermissionsBugRepro.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		D19375792A783901003D287E /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D193757A2A783901003D287E /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		D19375832A783901003D287E /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				D19375842A783901003D287E /* Info.plist */,
+				D19375852A783901003D287E /* OptionalPermissionsBugRepro.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D19375562A783901003D287E /* OptionalPermissionsBugRepro (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19375AA2A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro (iOS)" */;
+			buildPhases = (
+				D19375532A783901003D287E /* Sources */,
+				D19375542A783901003D287E /* Frameworks */,
+				D19375552A783901003D287E /* Resources */,
+				D19375A92A783901003D287E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19375782A783901003D287E /* PBXTargetDependency */,
+			);
+			name = "OptionalPermissionsBugRepro (iOS)";
+			productName = "OptionalPermissionsBugRepro (iOS)";
+			productReference = D19375572A783901003D287E /* OptionalPermissionsBugRepro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D19375682A783901003D287E /* OptionalPermissionsBugRepro (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19375B12A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro (macOS)" */;
+			buildPhases = (
+				D19375652A783901003D287E /* Sources */,
+				D19375662A783901003D287E /* Frameworks */,
+				D19375672A783901003D287E /* Resources */,
+				D19375B02A783901003D287E /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D19375822A783901003D287E /* PBXTargetDependency */,
+			);
+			name = "OptionalPermissionsBugRepro (macOS)";
+			productName = "OptionalPermissionsBugRepro (macOS)";
+			productReference = D19375692A783901003D287E /* OptionalPermissionsBugRepro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D19375742A783901003D287E /* OptionalPermissionsBugRepro Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19375A62A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro Extension (iOS)" */;
+			buildPhases = (
+				D19375712A783901003D287E /* Sources */,
+				D19375722A783901003D287E /* Frameworks */,
+				D19375732A783901003D287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OptionalPermissionsBugRepro Extension (iOS)";
+			productName = "OptionalPermissionsBugRepro Extension (iOS)";
+			productReference = D19375752A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D193757E2A783901003D287E /* OptionalPermissionsBugRepro Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D19375AD2A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro Extension (macOS)" */;
+			buildPhases = (
+				D193757B2A783901003D287E /* Sources */,
+				D193757C2A783901003D287E /* Frameworks */,
+				D193757D2A783901003D287E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "OptionalPermissionsBugRepro Extension (macOS)";
+			productName = "OptionalPermissionsBugRepro Extension (macOS)";
+			productReference = D193757F2A783901003D287E /* OptionalPermissionsBugRepro Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D193753B2A783900003D287E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					D19375562A783901003D287E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					D19375682A783901003D287E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					D19375742A783901003D287E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					D193757E2A783901003D287E = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D193753E2A783900003D287E /* Build configuration list for PBXProject "OptionalPermissionsBugRepro" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D193753A2A783900003D287E;
+			productRefGroup = D19375582A783901003D287E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D19375562A783901003D287E /* OptionalPermissionsBugRepro (iOS) */,
+				D19375682A783901003D287E /* OptionalPermissionsBugRepro (macOS) */,
+				D19375742A783901003D287E /* OptionalPermissionsBugRepro Extension (iOS) */,
+				D193757E2A783901003D287E /* OptionalPermissionsBugRepro Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D19375552A783901003D287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19375882A783901003D287E /* Icon.png in Resources */,
+				D19375602A783901003D287E /* LaunchScreen.storyboard in Resources */,
+				D19375862A783901003D287E /* Main.html in Resources */,
+				D193758C2A783901003D287E /* Script.js in Resources */,
+				D19375902A783901003D287E /* Assets.xcassets in Resources */,
+				D19375632A783901003D287E /* Main.storyboard in Resources */,
+				D193758A2A783901003D287E /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375672A783901003D287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19375892A783901003D287E /* Icon.png in Resources */,
+				D193758B2A783901003D287E /* Style.css in Resources */,
+				D193756F2A783901003D287E /* Main.storyboard in Resources */,
+				D193758D2A783901003D287E /* Script.js in Resources */,
+				D19375912A783901003D287E /* Assets.xcassets in Resources */,
+				D19375872A783901003D287E /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375732A783901003D287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D193759A2A783901003D287E /* background.js in Resources */,
+				D19375A02A783901003D287E /* popup.css in Resources */,
+				D193759E2A783901003D287E /* popup.html in Resources */,
+				D19375962A783901003D287E /* images in Resources */,
+				D19375982A783901003D287E /* manifest.json in Resources */,
+				D19375942A783901003D287E /* _locales in Resources */,
+				D193759C2A783901003D287E /* content.js in Resources */,
+				D19375A22A783901003D287E /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D193757D2A783901003D287E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D193759B2A783901003D287E /* background.js in Resources */,
+				D19375A12A783901003D287E /* popup.css in Resources */,
+				D193759F2A783901003D287E /* popup.html in Resources */,
+				D19375972A783901003D287E /* images in Resources */,
+				D19375992A783901003D287E /* manifest.json in Resources */,
+				D19375952A783901003D287E /* _locales in Resources */,
+				D193759D2A783901003D287E /* content.js in Resources */,
+				D19375A32A783901003D287E /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D19375532A783901003D287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D193758E2A783901003D287E /* ViewController.swift in Sources */,
+				D193755B2A783901003D287E /* AppDelegate.swift in Sources */,
+				D193755D2A783901003D287E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375652A783901003D287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D193758F2A783901003D287E /* ViewController.swift in Sources */,
+				D193756C2A783901003D287E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D19375712A783901003D287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19375922A783901003D287E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D193757B2A783901003D287E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19375932A783901003D287E /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D19375782A783901003D287E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D19375742A783901003D287E /* OptionalPermissionsBugRepro Extension (iOS) */;
+			targetProxy = D19375772A783901003D287E /* PBXContainerItemProxy */;
+		};
+		D19375822A783901003D287E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D193757E2A783901003D287E /* OptionalPermissionsBugRepro Extension (macOS) */;
+			targetProxy = D19375812A783901003D287E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D19375412A783900003D287E /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19375422A783900003D287E /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		D193755E2A783901003D287E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D193755F2A783901003D287E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D19375612A783901003D287E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D19375622A783901003D287E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D193756D2A783901003D287E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D193756E2A783901003D287E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D19375A42A783901003D287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D19375A52A783901003D287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D19375A72A783901003D287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OptionalPermissionsBugRepro Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro.Extension;
+				PRODUCT_NAME = "OptionalPermissionsBugRepro Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D19375A82A783901003D287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OptionalPermissionsBugRepro Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro.Extension;
+				PRODUCT_NAME = "OptionalPermissionsBugRepro Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D19375AB2A783901003D287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OptionalPermissionsBugRepro;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro;
+				PRODUCT_NAME = OptionalPermissionsBugRepro;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D19375AC2A783901003D287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = OptionalPermissionsBugRepro;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro;
+				PRODUCT_NAME = OptionalPermissionsBugRepro;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D19375AE2A783901003D287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/OptionalPermissionsBugRepro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OptionalPermissionsBugRepro Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro.Extension;
+				PRODUCT_NAME = "OptionalPermissionsBugRepro Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D19375AF2A783901003D287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/OptionalPermissionsBugRepro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "OptionalPermissionsBugRepro Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro.Extension;
+				PRODUCT_NAME = "OptionalPermissionsBugRepro Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D19375B22A783901003D287E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/OptionalPermissionsBugRepro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OptionalPermissionsBugRepro;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro;
+				PRODUCT_NAME = OptionalPermissionsBugRepro;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D19375B32A783901003D287E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/OptionalPermissionsBugRepro.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W97JP88X4;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = OptionalPermissionsBugRepro;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.olegwock.OptionalPermissionsBugRepro;
+				PRODUCT_NAME = OptionalPermissionsBugRepro;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D193753E2A783900003D287E /* Build configuration list for PBXProject "OptionalPermissionsBugRepro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19375A42A783901003D287E /* Debug */,
+				D19375A52A783901003D287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19375A62A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19375A72A783901003D287E /* Debug */,
+				D19375A82A783901003D287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19375AA2A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19375AB2A783901003D287E /* Debug */,
+				D19375AC2A783901003D287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19375AD2A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19375AE2A783901003D287E /* Debug */,
+				D19375AF2A783901003D287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D19375B12A783901003D287E /* Build configuration list for PBXNativeTarget "OptionalPermissionsBugRepro (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D19375B22A783901003D287E /* Debug */,
+				D19375B32A783901003D287E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D193753B2A783900003D287E /* Project object */;
+}
